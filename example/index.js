@@ -1,5 +1,5 @@
 import browser from './browser';
-import Script from '../src/Script';
+import Script from './Script';
 import Dispatcher from '../src/Dispatcher';
 
 const LIMIT = 5;

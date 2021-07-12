@@ -1,3 +1,3 @@
-import Dispatcher from './src/Dispatcher';
+import Dispatcher from '/src/Dispatcher';
 
 export default Dispatcher;
