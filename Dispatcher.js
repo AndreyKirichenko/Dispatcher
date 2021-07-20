@@ -1,7 +1,7 @@
-import Tab from './Tab';
+const Tab = require('./Tab.js');
 
 const GARBAGE_COLLECTOR_TIMEOUT = 1000;
-const TAB_CLOSE_TIMEOUT = 90000;
+const TAB_CLOSE_TIMEOUT = 30000;
 const TAB_LIMIT = 4;
 
 class Dispatcher {
@@ -27,7 +27,7 @@ class Dispatcher {
     this.queue.push(tab);
     this.run();
 
-    return tab.init();
+    return tab;
   }
 
   run = () => {
@@ -60,4 +60,4 @@ class Dispatcher {
   }
 }
 
-export default Dispatcher;
+module.exports =  Dispatcher;

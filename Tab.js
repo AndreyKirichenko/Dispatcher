@@ -7,7 +7,7 @@ class Tab {
   created = Date.now();
   watcher;
 
-  async init() {
+  async onClose() {
     return new Promise((resolve) => {
       this.watcher = setInterval(() => {
         if (this?.page?.isClosed()) {
@@ -38,4 +38,4 @@ class Tab {
   }
 }
 
-export default Tab;
+module.exports = Tab;
